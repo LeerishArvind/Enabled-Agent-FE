@@ -16,7 +16,7 @@ export default function Navbar() {
   return (
     <div className="nav">
       <Link className="brand" href="/">
-        Hiring UI
+        Enabled Agent
       </Link>
 
       <div className="links">

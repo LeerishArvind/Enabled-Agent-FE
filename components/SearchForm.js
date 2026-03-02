@@ -13,7 +13,7 @@ export default function SearchForm({ onSearch, loading }) {
 
   return (
     <div className="card">
-      <h3 style={{ marginTop: 0 }}>Employer Search</h3>
+      <h3 style={{ marginTop: 0 }}>Find Your Perfect Candidates</h3>
       <form onSubmit={submit} className="row">
         <div className="col" style={{ flexBasis: "100%" }}>
           <label>Job Description</label>
@@ -38,7 +38,7 @@ export default function SearchForm({ onSearch, loading }) {
         </div>
       </form>
       <p className="small" style={{ marginBottom: 0 }}>
-        Shows explanation first. Detailed report is expandable and structured.
+        Here are the detailed insights 
       </p>
     </div>
   );

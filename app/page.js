@@ -1,19 +1,40 @@
+import Link from "next/link";
 import Navbar from "../components/Navbar";
 
 export default function Home() {
   return (
     <>
       <Navbar />
-      <div className="card">
-        <h1 style={{ marginTop: 0 }}>FastAPI ↔ Next.js Integration</h1>
-        <p className="muted">
-          Minimal functional UI now. Styling later. Go to Signup/Login, then Dashboard to run employer search.
-        </p>
-        <div className="hr" />
-        <div className="kv">
-          <span className="badge">Next.js App Router</span>
-          <span className="badge">JWT Bearer Auth</span>
-          <span className="badge">FastAPI local</span>
+
+      <div className="landing">
+        <div className="hero" style={{ textAlign: "center" }}>
+          <h1 className="heroTitle">Enabled Agent</h1>
+
+          <p className="heroSub" style={{ margin: "14px auto 0", maxWidth: "60ch" }}>
+            Make hiring easy and intelligent.  
+            Instantly rank candidates from a job description and review clear,
+            explainable insights.
+          </p>
+
+          <div
+            className="ctaRow"
+            style={{
+              justifyContent: "center",
+              marginTop: 28,
+            }}
+          >
+            <Link className="btn btnPrimary" href="/dashboard">
+              Go to Dashboard →
+            </Link>
+
+            <Link className="btn" href="/login">
+              Login
+            </Link>
+
+            <Link className="btn" href="/signup">
+              Signup
+            </Link>
+          </div>
         </div>
       </div>
     </>

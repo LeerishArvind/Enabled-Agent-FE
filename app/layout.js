@@ -1,8 +1,8 @@
 import "../styles/globals.css";
 
 export const metadata = {
-  title: "FastAPI Hiring Frontend",
-  description: "Next.js frontend for FastAPI backend",
+  title: "Enabled Agent",
+  description: "Make hiring easy and intelligent",
 };
 
 export default function RootLayout({ children }) {

@@ -211,3 +211,81 @@ pre {
   .kpiRow, .features { grid-template-columns: 1fr; }
   .heroTitle { font-size: 34px; }
 }
+
+.modeSwitch {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.03);
+}
+
+.modeBtn {
+  height: 36px;
+  padding: 0 14px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+}
+
+.modeBtn.active {
+  color: white;
+  background: rgba(124,92,255,0.18);
+  border-color: rgba(124,92,255,0.25);
+}
+
+.filePickerArea {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+
+.cgFileBtn {
+  height: 44px;
+  padding: 0 16px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.03);
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.fileMeta {
+  min-width: 0;
+  display: flex;
+  align-items: center;
+}
+
+.fileName {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text);
+  font-size: 14px;
+  max-width: 340px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.filePlaceholder {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.searchInlineError {
+  width: min(920px, 94vw);
+  margin: 8px auto 0;
+  color: #ff8f8f;
+  font-size: 13px;
+}

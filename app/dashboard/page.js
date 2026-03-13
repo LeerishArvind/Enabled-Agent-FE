@@ -15,8 +15,19 @@ export default function DashboardPage() {
   async function onSearch(payload) {
     setErr("");
     setLoading(true);
+
     try {
-      const data = await api.employerSearch(payload);
+      let data;
+
+      if (payload.mode === "file") {
+        data = await api.employerSearchByFile(payload.jd_file, payload.top_k);
+      } else {
+        data = await api.employerSearch({
+          job_description: payload.job_description,
+          top_k: payload.top_k,
+        });
+      }
+
       setResults(data.results || []);
     } catch (e) {
       setErr(e.message || "Search failed");
